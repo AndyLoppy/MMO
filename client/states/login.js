@@ -24,7 +24,7 @@ Login.prototype = {
         var form = DomHelper.form(saveName);
         var blockInput = DomHelper.inputBlock();
 
-        nickNameInput = DomHelper.inputWithLabel(blockInput, 'Enter a nickname', 200, 200);
+        nickNameInput = DomHelper.inputWithLabel(blockInput, 'Rentre ton nom PELO', 200, 200);
 
         var saveButton = DomHelper.createButton('GO !!', 'game-login-button');
 
