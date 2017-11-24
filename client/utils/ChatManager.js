@@ -7,7 +7,7 @@ var mainPlayerName;
 
 function init(containerId){
     initGuiElements(containerId);
-    appendSystemMessage('info', 'Welcome ' + mainPlayerName + ' to this Demo');
+    appendSystemMessage('info', 'Bienvenu ' + mainPlayerName + ' dans ce test de RPG');
 }
 
 /*
