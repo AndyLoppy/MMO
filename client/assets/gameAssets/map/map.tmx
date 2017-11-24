@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="32" tileheight="32">
- <tileset firstgid="1" name="tiles" tilewidth="32" tileheight="32">
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="32" tileheight="32" nextobjectid="27">
+ <tileset firstgid="1" name="tiles" tilewidth="32" tileheight="32" tilecount="2016" columns="32">
   <image source="tile1.png" width="1024" height="2016"/>
  </tileset>
- <tileset firstgid="2017" name="collision" tilewidth="32" tileheight="32">
+ <tileset firstgid="2017" name="collision" tilewidth="32" tileheight="32" tilecount="2" columns="1">
   <image source="walkable.png" width="32" height="64"/>
  </tileset>
- <tileset firstgid="2019" name="Server Objects" tilewidth="32" tileheight="32">
+ <tileset firstgid="2019" name="Server Objects" tilewidth="32" tileheight="32" tilecount="1" columns="1">
   <image source="server_objects.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2020" name="roadNE" tilewidth="32" tileheight="32" tilecount="64" columns="8">
+  <image source="../../../../../roads/roadNE.jpg" width="256" height="256"/>
  </tileset>
  <layer name="ground" width="50" height="50">
   <data encoding="base64" compression="zlib">
-   eJztwwEJAAAMBKGr9/0LLcdAwVVTVVVVVVVVVVXV5w+OTMkD
+   eJztlzkWAjEMQ9PB1eb+F6KlgIwXSXbAhbp5ib6F7XCtta7RaPQ3ejzt3+10EoeV8VQOC9Ndntk6oDmyOSk42PVU5OH1o/LP4vCeibqfxcHuh12uyL2g5mDdYa2DYueoeg/Ngn5vePuke88zuL15ZGdA5vuOvVO9p1EzuYoDnauag/W7VHAwvSvfscwdpMwRPbPRmXo9qO6L1EfFwtxXShb27v01FpUfJkvk3I4sFX6qZ/A3P5H9wPifV3VWR45INt04Pvm2sFRzWGt/x1LNkc3qRI4dS9WsRLN02j+Z+9VvCTRLlKMLQ4ajE8O7n26+RqPReXoB16KNbQ==
   </data>
  </layer>
  <layer name="obstacles" width="50" height="50">
@@ -29,36 +32,36 @@
    eJzt2E0SgzAIBWB3vf8R25N0umtn1PDg8RNKZrIzxk9Q0OOYUWm8HvvPb8tTMKXHRc5x1PJOPPKvu4OjSzzG8bsGmeOQ54HGwdr7Xx3svBpHbwdj3wqOLvFgrFs5rDaLA1lbNR7o2uoOpMfwdHjfB8t/hmiHpB+p7lhZNA5v5+q+r5yIQ/Lseb0v7mKC5lXGNxKSX+jzkWlBHUieRfZRV32H9X0V7fFyaC3M3otZP9B/DKj57twedRDxSOqC5FxefbvFgsbVKx5n16hxoPtU6K8YzybTYcnDCg5G7bDuf+ZAexRrHL0cUTFgWTQOz/4jypHVP7Ec0T0teozEkVFXdq2DXR0adyfHVY+80/yMN7msKd8=
   </data>
  </layer>
- <objectgroup name="s_collectable" width="50" height="50">
-  <object type="Gold" gid="2019" x="96" y="320">
+ <objectgroup name="s_collectable">
+  <object id="1" type="Gold" gid="2019" x="96" y="320" width="32" height="32">
    <properties>
     <property name="value" value="20"/>
    </properties>
   </object>
-  <object type="Gold" gid="2019" x="641" y="192"/>
-  <object type="Gold" gid="2019" x="322" y="449"/>
-  <object type="Gold" gid="2019" x="95" y="417"/>
-  <object type="Gold" gid="2019" x="191" y="545"/>
-  <object type="Gold" gid="2019" x="96" y="195"/>
-  <object type="Gold" gid="2019" x="415" y="257"/>
-  <object type="Gold" gid="2019" x="413" y="673"/>
-  <object type="Gold" gid="2019" x="132" y="800"/>
-  <object type="Gold" gid="2019" x="676" y="834"/>
-  <object type="Gold" gid="2019" x="862" y="612"/>
-  <object type="Gold" gid="2019" x="926" y="288"/>
-  <object type="Gold" gid="2019" x="1344" y="1282"/>
-  <object type="Gold" gid="2019" x="774" y="1443"/>
-  <object type="Gold" gid="2019" x="577" y="1504"/>
-  <object type="Gold" gid="2019" x="95" y="1538"/>
-  <object type="Gold" gid="2019" x="482" y="1090"/>
-  <object type="Gold" gid="2019" x="286" y="1213"/>
-  <object type="Gold" gid="2019" x="933" y="773"/>
-  <object type="Gold" gid="2019" x="1250" y="258"/>
-  <object type="Gold" gid="2019" x="1378" y="607"/>
-  <object type="Gold" gid="2019" x="1313" y="1505"/>
-  <object type="Gold" gid="2019" x="1217" y="1407"/>
-  <object type="Gold" gid="2019" x="1120" y="383"/>
-  <object type="Gold" gid="2019" x="579" y="320"/>
-  <object type="Gold" gid="2019" x="544" y="612"/>
+  <object id="2" type="Gold" gid="2019" x="641" y="192" width="32" height="32"/>
+  <object id="3" type="Gold" gid="2019" x="322" y="449" width="32" height="32"/>
+  <object id="4" type="Gold" gid="2019" x="95" y="417" width="32" height="32"/>
+  <object id="5" type="Gold" gid="2019" x="191" y="545" width="32" height="32"/>
+  <object id="6" type="Gold" gid="2019" x="96" y="195" width="32" height="32"/>
+  <object id="7" type="Gold" gid="2019" x="415" y="257" width="32" height="32"/>
+  <object id="8" type="Gold" gid="2019" x="413" y="673" width="32" height="32"/>
+  <object id="9" type="Gold" gid="2019" x="132" y="800" width="32" height="32"/>
+  <object id="10" type="Gold" gid="2019" x="676" y="834" width="32" height="32"/>
+  <object id="11" type="Gold" gid="2019" x="862" y="612" width="32" height="32"/>
+  <object id="12" type="Gold" gid="2019" x="926" y="288" width="32" height="32"/>
+  <object id="13" type="Gold" gid="2019" x="1344" y="1282" width="32" height="32"/>
+  <object id="14" type="Gold" gid="2019" x="774" y="1443" width="32" height="32"/>
+  <object id="15" type="Gold" gid="2019" x="577" y="1504" width="32" height="32"/>
+  <object id="16" type="Gold" gid="2019" x="95" y="1538" width="32" height="32"/>
+  <object id="17" type="Gold" gid="2019" x="482" y="1090" width="32" height="32"/>
+  <object id="18" type="Gold" gid="2019" x="286" y="1213" width="32" height="32"/>
+  <object id="19" type="Gold" gid="2019" x="933" y="773" width="32" height="32"/>
+  <object id="20" type="Gold" gid="2019" x="1250" y="258" width="32" height="32"/>
+  <object id="21" type="Gold" gid="2019" x="1378" y="607" width="32" height="32"/>
+  <object id="22" type="Gold" gid="2019" x="1313" y="1505" width="32" height="32"/>
+  <object id="23" type="Gold" gid="2019" x="1217" y="1407" width="32" height="32"/>
+  <object id="24" type="Gold" gid="2019" x="1120" y="383" width="32" height="32"/>
+  <object id="25" type="Gold" gid="2019" x="579" y="320" width="32" height="32"/>
+  <object id="26" type="Gold" gid="2019" x="544" y="612" width="32" height="32"/>
  </objectgroup>
 </map>
